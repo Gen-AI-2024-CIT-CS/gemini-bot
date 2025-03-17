@@ -178,7 +178,7 @@ def query_database_with_gemini(query, db_data, db_schema):
         """
     
     # Generate content from Gemini
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     response = model.generate_content(prompt)
     
     # Extract the JSON part of the response
